@@ -70,8 +70,11 @@ class Circle{
 }
 
 let arrayCircle = [];
+const minCircles = 3;
+const maxCircles = 10;
+const circleCount = Math.floor(Math.random() * (maxCircles - minCircles + 1)) + minCircles;
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < circleCount; i++) {
     let randomX = Math.random() * window_width;
     let randomY = Math.random() * window_height;
     let randomRadius = Math.floor(Math.random() * 100 + 30);
