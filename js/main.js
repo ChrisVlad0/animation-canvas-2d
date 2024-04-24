@@ -75,9 +75,9 @@ const maxCircles = 10;
 const circleCount = Math.floor(Math.random() * (maxCircles - minCircles + 1)) + minCircles;
 
 for (let i = 0; i < circleCount; i++) {
-    let randomX = Math.random() * window_width;
-    let randomY = Math.random() * window_height;
     let randomRadius = Math.floor(Math.random() * 100 + 30);
+    let randomX = Math.random() * (window_width - 2 * randomRadius) + randomRadius;
+    let randomY = Math.random() * (window_height - 2 * randomRadius) + randomRadius;;
     let randomColor = `rgb(${Math.floor(Math.random() * 256)}, 
                            ${Math.floor(Math.random() * 256)},
                            ${Math.floor(Math.random() * 256)})`;
