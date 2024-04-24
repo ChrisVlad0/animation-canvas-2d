@@ -71,7 +71,7 @@ class Circle{
 
 let arrayCircle = [];
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 6; i++) {
     let randomX = Math.random() * window_width;
     let randomY = Math.random() * window_height;
     let randomRadius = Math.floor(Math.random() * 100 + 30);
